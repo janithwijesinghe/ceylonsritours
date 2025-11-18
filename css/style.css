@@ -1,10 +1,8 @@
-/* =====================================================
-   style.css - Replacement for Ceylon Sri Tours
-   ===================================================== */
-
 /* =====================
-   General Body & Typography
+   style.css - Full replacement for Ceylon Sri Tours
    ===================== */
+
+/* ----- Body & Typography ----- */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -15,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     font-weight: 600;
 }
 
@@ -23,60 +21,43 @@ p {
     margin: 0 0 15px 0;
 }
 
-/* =====================
-   Layout Containers
-   ===================== */
+/* ----- Containers & Sections ----- */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* =====================
-   Header / Navigation
-   ===================== */
+section {
+    padding: 60px 0;
+}
+
+/* ----- Header & Navigation ----- */
 header {
     background-color: #fff;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav a {
-    text-decoration: none;
+.navbar-nav .nav-item .nav-link {
     color: #333;
-    margin: 0 15px;
+    margin: 0 10px;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #25d366; /* WhatsApp green for accent */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #25d366;
 }
 
-/* =====================
-   Images
-   ===================== */
+/* ----- Images ----- */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* =====================
-   Sections / Content
-   ===================== */
-section {
-    padding: 60px 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* =====================
-   Buttons
-   ===================== */
-button, .btn {
+/* ----- Buttons ----- */
+.btn, button {
     background-color: #25d366;
     color: #fff;
     border: none;
@@ -87,13 +68,11 @@ button, .btn {
     transition: 0.3s;
 }
 
-button:hover, .btn:hover {
+.btn:hover, button:hover {
     background-color: #1ebe5d;
 }
 
-/* =====================
-   WhatsApp Floating Button
-   ===================== */
+/* ----- WhatsApp Floating Button ----- */
 .float {
     position: fixed;
     width: 60px;
@@ -113,9 +92,7 @@ button:hover, .btn:hover {
     margin-top: 16px;
 }
 
-/* =====================
-   Forms
-   ===================== */
+/* ----- Forms ----- */
 input, select, textarea {
     width: 100%;
     padding: 10px;
@@ -128,9 +105,7 @@ input[type="submit"], button[type="submit"] {
     width: auto;
 }
 
-/* =====================
-   Footer
-   ===================== */
+/* ----- Footer ----- */
 footer {
     background-color: #333;
     color: #fff;
@@ -147,14 +122,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* =====================
-   Animations / Utilities
-   ===================== */
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
+/* ----- Utility Classes ----- */
 .text-center {
     text-align: center;
 }
